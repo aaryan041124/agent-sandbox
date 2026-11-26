@@ -12,3 +12,9 @@ def multiply(a: float, b: float) -> float:
 
 def divide(a: float, b: float) -> float:
     return a / b
+
+
+def power(a: float, b: float) -> float:
+    if b < 0:
+        raise ValueError("exponent must be non-negative")
+    return a ** b
