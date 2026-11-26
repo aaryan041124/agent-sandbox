@@ -9,3 +9,11 @@ A tiny Python calculator library.
 pip install pytest
 pytest -q
 ```
+
+## Angular app
+`calculator/` is an Angular port of the library with a small UI.
+```bash
+cd calculator && npm install
+npm start      # dev server
+npm test       # unit tests
+```
