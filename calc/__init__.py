@@ -1,3 +1,3 @@
-from .core import add, divide, multiply, subtract
+from .core import add, divide, multiply, power, subtract
 
-__all__ = ["add", "subtract", "multiply", "divide"]
+__all__ = ["add", "subtract", "multiply", "divide", "power"]
