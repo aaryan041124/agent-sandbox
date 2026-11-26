@@ -15,6 +15,7 @@ def divide(a: float, b: float) -> float:
 
 
 def power(a: float, b: float) -> float:
+    """Return a raised to the power b; raise ValueError if b is negative."""
     if b < 0:
         raise ValueError("exponent must be non-negative")
     return a ** b
