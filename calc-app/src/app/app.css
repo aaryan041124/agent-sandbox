@@ -1,0 +1,5 @@
+main { max-width: 28rem; margin: 3rem auto; font-family: sans-serif; }
+.row { display: flex; gap: .5rem; }
+input, select { font-size: 1.1rem; padding: .4rem; }
+.result { font-size: 1.5rem; }
+.error { color: #b00020; }

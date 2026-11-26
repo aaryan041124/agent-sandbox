@@ -1,0 +1,18 @@
+<main>
+  <h1>Calculator</h1>
+  <div class="row">
+    <input type="number" aria-label="First number" [ngModel]="a()" (ngModelChange)="a.set($event ?? 0)" />
+    <select aria-label="Operation" [ngModel]="op()" (ngModelChange)="op.set($event)">
+      <option value="add">+</option>
+      <option value="subtract">−</option>
+      <option value="multiply">×</option>
+      <option value="divide">÷</option>
+    </select>
+    <input type="number" aria-label="Second number" [ngModel]="b()" (ngModelChange)="b.set($event ?? 0)" />
+  </div>
+  @if (outcome().error) {
+    <p class="error">{{ outcome().error }}</p>
+  } @else {
+    <p class="result">= {{ outcome().value }}</p>
+  }
+</main>
