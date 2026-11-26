@@ -1,4 +1,4 @@
-from calc import add, divide, multiply, subtract
+from calc import add, divide, hello_aj, multiply, subtract
 
 
 def test_add():
@@ -15,3 +15,8 @@ def test_multiply():
 
 def test_divide():
     assert divide(9, 3) == 3
+
+
+def test_hello_aj(capsys):
+    hello_aj()
+    assert capsys.readouterr().out == "Hello AJ\n"
