@@ -12,3 +12,7 @@ def multiply(a: float, b: float) -> float:
 
 def divide(a: float, b: float) -> float:
     return a / b
+
+
+def hello_aj() -> None:
+    print("Hello AJ")
