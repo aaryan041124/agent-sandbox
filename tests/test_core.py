@@ -15,3 +15,10 @@ def test_multiply():
 
 def test_divide():
     assert divide(9, 3) == 3
+
+
+def test_hello_world(capsys):
+    from calc import hello_world
+
+    hello_world()
+    assert capsys.readouterr().out == "Hello, World!\n"
